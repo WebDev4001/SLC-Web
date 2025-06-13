@@ -9,6 +9,7 @@ yarn.lock
 .env.development.local
 .env.test.local
 .env.production.local
+backend/.env
 
 # Logs
 logs
@@ -49,4 +50,3 @@ $RECYCLE.BIN/
 temp/
 tmp/
 .eslintcache
-
