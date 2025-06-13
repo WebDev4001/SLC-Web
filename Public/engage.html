@@ -249,6 +249,7 @@
         </div>
     </footer>
 
+    <script src="js/forms.js"></script>
     <script src="js/main.js"></script>
     <script>
         document.getElementById('mobile-menu-button-engage').addEventListener('click', function() {
@@ -301,24 +302,12 @@
         // Initial render
         renderEvents(events);
 
-        // Form submission handling (for demonstration, just logs to console)
-        document.querySelector('#suggest-book form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Book suggestion submitted! (Form submission logic would connect to backend)');
-            this.reset();
-        });
-
-        document.querySelector('#join-slc form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('SLC application submitted! (Form submission logic would connect to backend)');
-            this.reset();
-        });
-
-        document.querySelector('#contact-feedback form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Feedback submitted! (Form submission logic would connect to backend)');
-            this.reset();
-        });
+        // Placeholder for any other page-specific JS that might have been removed by original sed.
+        // The original sed commands were:
+        // sed '/<script>/,/^        renderEvents(events);/d'
+        // sed '/document.querySelector(''#suggest-book form'').addEventListener(''submit''/,/});/d'
+        // This current approach is more targeted: removes only the placeholder form listeners
+        // and adds the forms.js script tag, while keeping the event filtering and mobile menu logic.
     </script>
 </body>
 </html>
